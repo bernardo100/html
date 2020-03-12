@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>div</title>
+
+<body>
+<h1>frutas</h1><br>
+<a href="maça.html"class="frutas">MAÇA</a></br>
+<a href="uva.html"class="frutas">uva</a></br>
+<a href="pera.html"class="frutas">pera</a></br>
+<body>
+
+<h1>legumes</h1><br>
+<a href="tomate.html"></a></br>
+<a href="abobora.html"></a></br>
+<a href="pepino.html"></a></br>
+
+
+
+
+
+
+
+
+ 
+</body>
+
+</body>

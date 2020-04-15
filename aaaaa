@@ -1,0 +1,57 @@
+<body>
+<style>{.bernad
+
+}
+
+</style>
+
+
+
+
+
+
+</body>
+
+<table border="1">
+<thead>
+<th>nome</th>
+<th>sobrenome</th>
+<th>cpf</th>
+<th>celular</th>
+
+</thead>
+<thead>
+<tr>
+
+<td>adriano</td>
+<td>ramos</td>
+<td>9999-99991</td>
+<td>32998190340</td>
+</tr>
+<tr>
+    <td>bernardo</td>
+    <td>barbosa</td>
+    <td>919129102</td>
+    <td>99798736</td>
+    <tr>
+        <td>adriano</td>
+        <td>ramos</td>
+        <td>9999-99991</td>
+        <td>32998190340</td>
+
+    </tr>
+    <tr>
+        <td>bernardo</td>
+        <td>barbosa</td>
+        <td>919129102</td>
+        <td>99798736</td>   
+    </tr>
+
+
+</tr>
+
+    
+</tr>
+<div class="bernardo">
+
+</div>

@@ -1,0 +1,53 @@
+<HTML>
+<head>
+
+</head>
+<body>
+ <style>
+.div1{
+background-color: gray;
+height: 20px;
+
+
+
+}
+.div2{
+background-color: gray;
+height: 60px;
+}
+.div3{
+background-color: gray;
+}
+
+ </style>
+
+     
+
+
+</body>
+
+
+</stle>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="texto verde">
+<div class="div1">nome :bernardo barbosa de moura </div>
+<div class="div2">nascimento :09/06/2003</div>
+<div class="div3">leito :1000</div>
+
+
+    
+
+
+</div>

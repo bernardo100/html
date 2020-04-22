@@ -1,0 +1,141 @@
+<html>
+<head>
+
+</head>
+</html>
+
+
+<style>
+
+.i2{
+color: indigo;
+background-color: khaki;
+
+}
+.i3{
+color:red;
+background-color: royalblue;
+
+
+}
+.i4{
+color: seagreen;
+background-color: slateblue;
+
+}
+.u1{
+color: thistle;
+background-color: turquoise;
+
+}
+
+
+   
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</style>
+
+   <table border="1">
+    <thead>
+
+
+    <tr>
+    <th class="u1">nome</th>
+    <th class="u1">sobrenome</th>
+    <th class="u1">cpf</th>
+    <th class="u1">numero</th>
+     </thead>
+
+</tr>
+
+
+    <tr>
+    <td >alex</td>
+    <td >fernandes</td>
+    <td >830-550-616-91</td>
+    <td >998190320</td>
+
+    </tr>
+    <tr>
+     <td class="i2">bernardo</td>   
+    <td class="i2">barbosa</td>
+      <td class="i2">550-616-735-98</td>  
+     <td class="i2">999798736</td>   
+       
+        
+
+    </tr>
+    <td>marcela</td>
+    <td>rezende</td>
+    <td>840-796-548-98</td>
+    <td>99819038</td>
+    <tr>
+
+
+
+        <td class="i3">edilaine</td>
+        <td class="i3">faria</td>
+        <td class="i3">840-999-945-91</td>
+         <td class="i3">988766481</td>
+
+    </tr>
+    <tr>
+        <td>alex</td>
+        <td>fernandes</td>
+        <td>830-550-616-91</td>
+        <td>998190320</td>
+    </tr>
+    <tr>
+        <td class="i4">bernardo</td>
+        <td class="i4">barbosa</td>
+        <td class="i4">550-616-735-98</td>
+        <td class="i4">999798736</td>
+    </tr>
+    <tr>
+    <td>marcela</td>
+    <td>rezende</td>
+    <td>840-796-548-98</td>
+    <td>99819038</td>
+    </tr>
+
+
+
+
+
+
+
+
+
+</table>

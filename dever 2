@@ -13,22 +13,27 @@
 .i2{color:#585858;
     background-color: black
 
-}
-.i3{
 
-color:#585858 ;
- background-color: black    
+}
+.i2:hover{
+color: black;
+background-color: green;
+}
+
+
+
+
+
+    
 
 
     
 
    
 
-}
-.i4{color: #585858;
-background-color: black;
 
-}
+
+
 
 
 
@@ -92,10 +97,10 @@ background-color: black;
   
 
    
-        <td class="i3">edilaine</td>
-        <td class="i3">faria</td>
-        <td class="i3">840-999-945-91</td>
-         <td class="i3">988766481</td>
+        <td class="i2">edilaine</td>
+        <td class="i2">faria</td>
+        <td class="i2">840-999-945-91</td>
+         <td class="i2">988766481</td>
        
     </tr>
     <tr>
@@ -105,10 +110,10 @@ background-color: black;
         <td>998190320</td>
     </tr>
     <tr>
-        <td class="i4">bernardo</td>
-        <td class="i4">barbosa</td>
-        <td class="i4">550-616-735-98</td>
-        <td class="i4">999798736</td>
+        <td class="i2">bernardo</td>
+        <td class="i2">barbosa</td>
+        <td class="i2">550-616-735-98</td>
+        <td class="i2">999798736</td>
     </tr>
     <tr>
     <td>marcela</td>

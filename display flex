@@ -1,0 +1,113 @@
+<htmL>
+    <head>
+    <title>aula</title>
+    <style>
+.input{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-color: brown;
+height: 100px;
+
+}
+
+
+
+
+
+
+
+   
+
+ 
+ 
+
+#botao{
+   text-align: center;
+   background-color: brown; 
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <body>
+     
+    
+    
+    
+    <div class="input">
+    <label for="">nome de usuario</label>
+    <input type="text">
+    
+    
+    
+    </form>
+     </div>
+    
+    </div>
+    
+    
+    
+    </div>
+    <div class="input">
+    <label for="">email</label>
+    <input type="text" >
+    
+    
+    
+    </div>
+    <div class="input">
+    <label for="">senha</label>
+    <input type="text" >
+    </div>
+    <div class="input">
+    <label for="">uma pergunta qualquer</label>
+    <input for="text" >
+    
+    </div>
+    <div id="botao">
+     <input type="submit" name="botao" value="ENVIAR DADOS" class="botaoEnviar">   
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    </body>
+    
+    
+    </head>
+    </htmL>

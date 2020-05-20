@@ -10,8 +10,8 @@
 
     <title>Site</title>
   </head>
-  
-    
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -50,9 +50,9 @@
             <a class="dropdown-item" href="#">facebook</a>
             <a class="dropdown-item" href="#">Instagram</a>
             <a class="dropdown-item" href="#">Twitter</a>
-            
-</ul>
 
+</ul>
+</nav>
 
 
 
@@ -70,18 +70,13 @@
     <div class="carousel-item">
       <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYd35Vz1NAM_y023qSiDBuI-t-7vzLAyZ3flAhHavDN89xtErC&usqp=CAU" alt="Terceiro Slide">
     </div>
-    <form class="form-inline">
-    <input class="form-control ml-4" type="search" placeholder="buscar...">
-    <button class="btn btn-dark" type="submit">ok</button>
-
- </form>   
-
-
-
-
-
-
     
+
+
+
+
+
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,5 +90,6 @@
 
 
 
-      
+
     </body>
+

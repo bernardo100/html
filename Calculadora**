@@ -1,0 +1,154 @@
+<htmL>
+<head>
+    <title>calculadora</title>
+<style type="text/css">
+body{
+   border: 1px ;
+   position: absolute;
+   width: 80%;
+   height: 75%;
+   margin-left: 10%; 
+}
+#calculadora{
+    border: 1px red;
+background-color: black;
+width: 95%;
+height: 90%;
+padding: 10px;
+border-radius: 10px;
+margin: 5px;
+}
+button{
+    width: 20%;
+height: 100px;
+margin: 3px;
+border-radius: 5px;
+border-style: none;
+font-size: 50pt;
+}
+#igualdade{
+position: absolute;
+width: 12%;
+top: 18.5%;
+left: 79.5%;
+height: 60%;
+background-color: red;
+}
+#display{
+    width: 94%;
+    height: 20%;
+font-size: 50pt;
+overflow: hidden;
+border-radius: 5px;
+padding: 20px;
+
+}
+#limpatela{
+    background-color: red;
+}
+
+
+
+
+
+</style>
+<script tpye="text/javacript">
+var displaybuffer="";
+var numero="";
+var termos=[undefined,undefined,undefined]
+var resultado = undefined;
+
+function pressNum(num){
+    numero= numero.concat(num.innerHTML);
+    showDisplay(num.innerHTML);
+}
+
+function pressOperator(op){
+termos[0] = numero;
+termos[1] = op.innerHTML;
+showDisplay(op.innerHTML);
+numero="";
+
+
+}
+function pressEqual(){
+
+termos[2] = numero;
+resultado = Number(termos[0])+Number(termos[2]);
+clearDisplay();
+showDisplay(resultado)
+
+}
+
+
+function clearMemory(){
+    numero="";
+}
+
+
+function clearDisplay(){
+displaybuffer = "";
+var tela = document.getElementById('display');
+tela.value= displaybuffer;
+
+
+
+}
+function clearA11(){
+    clearDisplay();
+    clearMemory();
+}
+
+
+
+
+
+function showDisplay(conteudo){
+displaybuffer = displaybuffer.concat(conteudo);
+var tela=document.getElementById('display');
+tela.value = displaybuffer;
+
+}
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<div id="calculadora">
+<textarea id="display" disabled rows="1"></textarea>
+<div>
+    <button onclick="pressNum(this)">1</button>
+    <button onclick="pressNum(this)">2</button>
+    <button onclick="pressNum(this)">3</button>
+    <button onclick="pressOperator(this)" >+</button>
+</div>
+<div>
+    <button onclick="pressNum(this)">4</button>
+    <button onclick="pressNum(this)">5</button>
+    <button onclick="pressNum(this)">6</button>
+    <button onclick="pressOperator(this)">-</button>
+</div>
+<div>
+    <button onclick="pressNum(this)">7</button>
+    <button onclick="pressNum(this)">8</button>
+    <button onclick="pressNum(this)">9</button>
+    <button onclick="pressOperator(this)">*</button>
+</div>
+<div>
+    <button onclick="pressNum(this)">0</button>
+    <button onclick="pressNum(this)">.</button>
+    <button id="limpatela" onclick="clearA11()">c</button>
+    <button onclick="pressOperator(this)">/</button>
+</div>
+<button id="igualdade" onclick="pressEqual()">=</button>
+
+</div>
+</body>
+
+
+</htmL>

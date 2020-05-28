@@ -1,0 +1,13 @@
+<html>
+    <head>
+<title>Jarvascript</title>
+</head>    
+<body>   
+<script>
+
+for(cont=0;cont<1;cont++){
+document.write("<h2> Pera = Preço: 4,00 reais,<h2><br>Banana = Preço: 5,00 reais <br><br> Maça = Preço: 3,00 reais<br><br> Morango = Preço: 5,00 reais <br><br>Abacate = Preço:2,40 reais <br><br> Amora = Preço:7,00 reais") 
+ }
+</script>
+</body>
+</html>

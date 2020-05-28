@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Jarvascript</title>
+<body>
+<script>
+let fruta={
+Banana:"Preço=3,00 reais",
+Pera:" Preço=4,00 reias",
+Uva:"Preço=5,00 reais",
+Abacate:"Preço=6,00 reias",
+
+
+
+andar:function(){
+return console.log('')
+}
+}
+console.log(fruta);{
+}
+</script>    
+</body>
+</head>
+</html>

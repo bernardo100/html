@@ -1,0 +1,37 @@
+<html>
+   <head></head>
+<style>
+.oi{
+  color: red;  
+}
+
+
+
+
+</style>
+
+
+
+   <body>
+<h1 class="oi" id="bernardo"></h1>
+<input nome="nome" onkeypress="clicar()" id="nome" placeholder="colocar seu nome">
+<script>
+  function clicar(){
+
+const nome=document.querySelector("#nome").value
+
+document.querySelector("#bernardo").textContent=nome
+
+  }  
+
+
+
+</script>
+
+
+
+
+
+
+   </body> 
+</html>

@@ -1,0 +1,160 @@
+///////HTML/////////
+
+<!DOCTYPE HTML>
+<html lang= "en">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo</title>   
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">  
+<link href="estilo.css" rel="stylesheet">
+<script src="teste.js"></script>
+ </head>
+ <body onload="inicializar()">
+<center>
+  <canvas id="canvas" width="600" height="480">
+
+  </canvas>
+  <br>
+  <button class="btn btn-danger" onclick="start()">Start</button>
+</center>
+
+
+</body>
+
+ 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+////STYLE////
+
+
+
+canvas{
+    border: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////JAVAscript/////
+
+var barraAltura, barraLargura, jogadorPosicaoX, velocidadeJogador, bolaDiamentro, bolaPosX,
+bolaPosY, velocidadeBola, pontos, vidas;
+
+function inicializar(){
+    barraAltura = 15;
+    barraLargura = 90;
+    velocidadeJogador=20;
+
+    jogadorPosicaoX = (canvas.width - barraLargura) / 2;
+
+    bolaDiamentro=10;
+    bolaPosX = canvas.width / 2;
+    bolaPosY=20;
+    velocidadeBola=10;
+    pontos = 0;
+    vidas = 3;
+
+    canvas = document.getElementById("canvas");
+    context = canvas.getContext("2d");
+
+    context.fillRect(jogadorPosicaoX, canvas.height - barraAltura, barraLargura, barraAltura);
+    document.addEventListener('keydown',keyDown);
+    setInterval(gameloop, 30);
+}
+
+function keyDown(e){
+    if(e.keyCode==37){
+     if(jogadorPosicaoX > 0) 
+     jogadorPosicaoX -=velocidadeJogador; 
+        
+    }
+    if(e.keyCode==39){
+        if(jogadorPosicaoX <(canvas.width - barraLargura)){
+
+        
+        jogadorPosicaoX+=velocidadeJogador;
+}
+    }
+  
+}
+function gameloop(){
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillRect(jogadorPosicaoX, canvas.height - barraAltura, barraLargura, barraAltura);
+context.beginPath();
+context.arc(bolaPosX, bolaPosY, bolaDiamentro, 0, Math.PI* 2,true);
+context.fill();
+
+if(bolaPosY <= canvas.height){
+    bolaPosY +=velocidadeBola;
+}
+else{bolaPosX = Math.random() * 600;
+    bolaPosY = -10;
+    colisao = false;
+}
+if ((bolaPosX > jogadorPosicaoX && bolaPosX <jogadorPosicaoX + barraLargura && 
+    bolaPosY>=canvas.height - barraAltura && colisao == false)){
+       pontos++; 
+       colisao = true;
+       velocidadeBola+=velocidadeBola * (pontos/500);
+    }
+
+    if((bolaPosX < jogadorPosicaoX || bolaPosX > jogadorPosicaoX + barraLargura) &&
+    bolaPosY >= canvas.height && colisao == false){
+        vidas --;
+        colisao = true;
+
+    }
+    if(vidas < 1){
+        context.font = "30pt Comic Sans MS";
+        context.fillText("pontos:"+pontos+" - Game Over!",0, 50 );
+        velocidadeBola = 0;
+        velocidadeJogador = 0;
+    }else{
+        context.font = "30pt Comic Sans MS";
+    context.fillText("pontos: "+pontos+ " - Vidas:" + vidas, 0,50);
+
+    }
+
+
+
+    context.font = "30pt Comic Sans MS";
+    context.fillText("pontos: "+pontos ,0,50);
+        
+    }
+
+    function start (){
+        window.location.reload();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
